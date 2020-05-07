@@ -9,9 +9,9 @@
     <meta name="description" content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="PIXINVENT">
-    <title>Login Page - Vuexy - Bootstrap HTML admin template</title>
-    <link rel="apple-touch-icon" href="{{ asset('template/app-assets/images/ico/apple-icon-120.png') }}">
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('template/app-assets/images/ico/favicon.ico') }}">
+    <title>{{ config('app.name')}}</title>
+    <link rel="apple-touch-icon" href="{{ asset('template/app-assets/images/ico/icon.png') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('template/app-assets/images/ico/icon.png') }}">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
 
     <!-- BEGIN: Vendor CSS-->
@@ -52,31 +52,14 @@
             <div class="content-body">
                 <section class="row flexbox-container">
                     <div class="col-xl-8 col-11 d-flex justify-content-center">
-                        <div class="card bg-authentication rounded-0 mb-0">
+                        <div class="card bg-secondary rounded-0 mb-0">
                             <div class="row m-0">
-                                <div class="col-lg-6 d-lg-block d-none text-center align-self-center px-1 py-0">
-                                    <img src="{{ asset('template/app-assets/images/pages/login.png') }}" alt="branding logo">
+                                <div class="col-lg-6 d-lg-block d-none text-center align-self-center px-0 py-0">
+                                    <img src="{{ asset('template/app-assets/images/pages/login/portada.png') }}" alt="branding logo">
                                 </div>
                                 <div class="col-lg-6 col-12 p-0">
                                     <div class="card rounded-0 mb-0 px-2">
-                                        <div class="card-header pb-1">
-                                            <div class="card-title">
-                                                <h4 class="mb-0">Login</h4>
-                                            </div>
-                                        </div>
-                                        <p class="px-2">Welcome back, please login to your account.</p>
                                         @yield('content')
-                                        <div class="login-footer">
-                                            <div class="divider">
-                                                <div class="divider-text">OR</div>
-                                            </div>
-                                            <div class="footer-btn d-inline">
-                                                <a href="#" class="btn btn-facebook"><span class="fa fa-facebook"></span></a>
-                                                <a href="#" class="btn btn-twitter white"><span class="fa fa-twitter"></span></a>
-                                                <a href="#" class="btn btn-google"><span class="fa fa-google"></span></a>
-                                                <a href="#" class="btn btn-github"><span class="fa fa-github-alt"></span></a>
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
