@@ -13,17 +13,17 @@
         <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
             <li class=" nav-item"><a href="#"><i class="feather icon-home text-warning"></i><span class="menu-title text-warning" data-i18n="Starter kit">Administración</span></a>
                 <ul class="menu-content">
-                    <li class="menu-item"><a href="#"><i class="fa fa-hand-o-right text-warning"></i><span data-i18n="Usuarios">Usuarios</span></a>
+                    <li class="menu-item"><a href="/users"><i class="fa fa-hand-o-right text-warning"></i><span data-i18n="Usuarios">Usuarios</span></a>
                     </li>
-                    <li class="menu-item"><a href="#"><i class="fa fa-hand-o-right text-warning"></i><span data-i18n="Puestos">Puestos</span></a>
+                    <li class="menu-item"><a href="/positions"><i class="fa fa-hand-o-right text-warning"></i><span data-i18n="Puestos">Puestos</span></a>
                     </li>
-                    <li class="menu-item"><a href="#"><i class="fa fa-hand-o-right text-warning"></i><span data-i18n="Empresas clientes">Empresas clientes</span></a>
+                    <li class="menu-item"><a href="/clients"><i class="fa fa-hand-o-right text-warning"></i><span data-i18n="Empresas clientes">Empresas clientes</span></a>
                     </li>
-                    <li class="menu-item"><a href="#"><i class="fa fa-hand-o-right text-warning"></i><span data-i18n="Categorías">Categorías</span></a>
+                    <li class="menu-item"><a href="/categories"><i class="fa fa-hand-o-right text-warning"></i><span data-i18n="Categorías">Categorías</span></a>
                     </li>
-                    <li class="menu-item"><a href="#"><i class="fa fa-hand-o-right text-warning"></i><span data-i18n="Montos por puesto">Montos por puesto</span></a>
+                    <li class="menu-item"><a href="/amounts#"><i class="fa fa-hand-o-right text-warning"></i><span data-i18n="Montos por puesto">Montos por puesto</span></a>
                     </li>
-                    <li class="menu-item"><a href="#"><i class="fa fa-hand-o-right text-warning"></i><span data-i18n="Áreas">Áreas</span></a>
+                    <li class="menu-item"><a href="/areas"><i class="fa fa-hand-o-right text-warning"></i><span data-i18n="Áreas">Áreas</span></a>
                     </li>
                 </ul>
             </li>
@@ -47,7 +47,7 @@
                     </li>
                 </ul>
             </li>
-            <li class=" nav-item"><a href="#"><i class="feather icon-folder text-danger"></i><span class="menu-title text-danger" data-i18n="Documentation">Soporte</span></a>
+            <li class="nav-item"><a href="#"><i class="feather icon-folder text-danger"></i><span class="menu-title text-danger" data-i18n="Documentation">Soporte</span></a>
             </li>
         </ul>
     </div>
