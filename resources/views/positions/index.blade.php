@@ -14,32 +14,33 @@
                             <thead>
                                 <tr>
                                     <th scope="col">ID</th>
-                                    <th scope="col">Name</th>
-                                    <th scope="col">Email</th>
-                                    <th scope="col">User ID</th>
+                                    <th scope="col">Nombre del Puesto</th>
+                                    <th scope="col">Descripción</th>
+                                    <th scope="col">Fecha y Hora de Creación</th>
+                                    <th>Opciones</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Leanne Graham</td>
-                                    <td>sincere@april.biz</td>
-                                    <td>@mdo</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>Ervin Howell</td>
-                                    <td>shanna@melissa.tv</td>
-                                    <td>@fat</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>Clementine Bauch</td>
-                                    <td>nathan@yesenia.net</td>
-                                    <td>@twitter</td>
-                                </tr>
+                                @foreach($positions as $position)
+                                    <tr>
+                                        <th scope="row">{{ $position->id }}</th>
+                                        <td>{{ $position->nombre }}</td>
+                                        <td>{{ $position->descripcion }}</td>
+                                        <td>{{ $position->created_at }}</td>
+                                        <td>
+                                            <form action="{{ url('') }}" method="POST">
+                                                @method('DELETE')
+                                                <a href="{{ url('/positions/'.$position->id.'/edit') }}" class="btn btn-outline-info btn-m"><i class="fa fa-edit text-info"></i></a>
+                                                <a href="" class="btn btn-outline-danger"><i class="fa fa-trash text-danger"></i></a>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                @endforeach    
                             </tbody>
                         </table>
+                    </div>
+                    <div class="pagination justify-content-center mt-0">
+                        {{ $positions->links() }}
                     </div>
                 </div>
             </div>

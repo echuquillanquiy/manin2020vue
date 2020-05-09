@@ -9,7 +9,8 @@ class PositionController extends Controller
 {
     public function index()
     {
-        return view('positions.index');
+        $positions = Position::orderBy('id', 'ASC')->paginate(4);
+        return view('positions.index', compact('positions'));
     }
 
     public function create()
@@ -21,7 +22,7 @@ class PositionController extends Controller
     {
         $validatedData = $request->validate([
             'nombre' => 'required|max:50|min:5',
-            'descripcion' => 'nullable|min:5'
+            'descripcion' => 'nullable|min:5|max:50'
         ]);
 
         Position::create($request->all());
@@ -32,17 +33,30 @@ class PositionController extends Controller
 
     public function show(Position $position)
     {
-        //
+        
     }
 
-    public function edit(Position $position)
+    public function edit($id)
     {
-        //
+        $position = Position::findOrFail($id);
+        return view('positions.edit', compact('position'));
+    
     }
-
-    public function update(Request $request, Position $position)
+    public function update(Request $request, $id)
     {
-        //
+
+        $position = Position::findOrFail($id);
+        $validatedData = $request->validate([
+            'nombre' => 'required|max:50|min:5',
+            'descripcion' => 'nullable|min:5|max:50'
+        ]);
+        $data = $request->all();
+
+        $position->fill($data);
+        $position->save();
+
+        $notification = "El puesto se actualizo correctamente";
+        return redirect('/positions')->with(compact('notification'));
     }
 
     public function destroy(Position $position)
