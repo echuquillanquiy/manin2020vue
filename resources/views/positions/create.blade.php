@@ -37,8 +37,8 @@
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <button type="submit" class="btn btn-primary mr-1 mb-1">Registrar</button>
-                                    <a href="{{ route('positions.index') }}" class="btn btn-warning mr-1 mb-1">Cancelar</a>
+                                    <button type="submit" class="btn btn-outline-primary round mr-1 mb-1 waves-effect waves-light">Registrar</button>
+                                    <a href="{{ route('positions.index') }}" class="btn btn-outline-warning round mr-1 mb-1 waves-effect waves-light">Cancelar</a>
                                 </div>
                             </div>
                         </div>

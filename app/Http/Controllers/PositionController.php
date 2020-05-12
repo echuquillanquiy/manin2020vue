@@ -55,12 +55,16 @@ class PositionController extends Controller
         $position->fill($data);
         $position->save();
 
-        $notification = "El puesto se actualizo correctamente";
+        $notification = "EL PUESTO SE ACTUALIZÓ CORRECTAMENTE.";
         return redirect('/positions')->with(compact('notification'));
     }
 
-    public function destroy(Position $position)
+    public function destroy (Position $position)
     {
-        //
+        $positionName = $position->nombre;
+        $position->delete();
+        
+        $notification = "EL PUESTO $positionName SE HA ELIMINADO CORRECTAMENTE.";
+        return redirect('/positions')->with(compact('notification'));
     }
 }

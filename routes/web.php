@@ -22,4 +22,4 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 
-Route::resource('/positions', 'PositionController');
+Route::resource('positions', 'PositionController');

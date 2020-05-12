@@ -2,10 +2,12 @@
     <div class="navbar-header">
         <ul class="nav navbar-nav flex-row">
             <li class="nav-item mr-auto"><a class="navbar-brand" href="#">
-                    <div class="brand-logo"></div>
+                    <div class="mb-0 "><img src="" alt=""><img src="{{ asset('template/app-assets/images/ico/icon.png') }}" alt=""></div>
                     <h2 class="brand-text mb-0 text-warning">Mainin</h2>
                 </a></li>
-            <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="feather icon-x d-block d-xl-none font-medium-4 primary toggle-icon"></i><i class="toggle-icon feather icon-disc font-medium-4 d-none d-xl-block primary" data-ticon="icon-disc"></i></a></li>
+            <li class="nav-item nav-toggle"><a class="na-link modern-nav-toggle pr-0" data-toggle="collapse">
+                <i class="feather icon-x d-block d-xl-none font-medium-4 warning toggle-icon"></i>
+                <i class="toggle-icon font-medium-4 d-none d-xl-block collapse-toggle-icon warning feather icon-circle" data-ticon="icon-disc"></i></a></li>
         </ul>
     </div>
     <div class="shadow-bottom"></div>

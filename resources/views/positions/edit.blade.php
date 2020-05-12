@@ -53,25 +53,6 @@
         
         <div class="card">
             <div class="card-header">
-                <h4 class="card-title text-success">Alertas</h4>
-            </div>
-    
-            <div class="card-content">
-                <div class="card-body">
-                    @if(session('notification'))
-                        <div class="col-md-12 col-12 mt--4">
-                            <div class="alert alert-success mt-1 alert-validation-msg" role="alert">
-                                <i class="feather icon-save mr-1 align-middle"></i>
-                                {{ session('notification') }}
-                            </div>
-                        </div>
-                    @endif
-                </div>
-            </div>
-        </div>
-        
-        <div class="card">
-            <div class="card-header">
                 <h4 class="card-title text-danger">Errores</h4>
             </div>
     
